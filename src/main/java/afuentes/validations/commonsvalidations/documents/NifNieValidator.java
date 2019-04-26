@@ -15,7 +15,7 @@ abstract class NifNieValidator extends Document {
 	}
 	
 	private char getLastCharacterLetter() {
-		return Character.toUpperCase(this.documentIdentification.charAt(this.documentIdentification.length() - 1));
+		return this.documentIdentification.charAt(this.documentIdentification.length() - 1);
 	}
 	
 }

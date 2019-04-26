@@ -20,7 +20,7 @@ public class NieValidator extends NifNieValidator{
 	protected boolean isCorrectLetter() {
 		String documentCopy = this.documentIdentification;
 		boolean isValid = false;
-		int firstLetter = Character.toUpperCase(this.documentIdentification.charAt(0)) - FIRST_LETTER_CONTROL;
+		int firstLetter = this.documentIdentification.charAt(0) - FIRST_LETTER_CONTROL;
 		this.documentIdentification = String.valueOf(firstLetter).concat(this.documentIdentification.substring(1));
 		isValid = super.isCorrectLetter();
 		this.documentIdentification = documentCopy;

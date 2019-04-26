@@ -16,7 +16,7 @@ abstract class Document implements IDocumentValidator {
 	protected int patternGroup = -1;
 	
 	protected void cleanDocument() {
-		this.documentIdentification = this.documentIdentification.trim().replaceAll("-", "");
+		this.documentIdentification = this.documentIdentification.trim().replaceAll("-", "").toUpperCase();
 	}
 	
 	protected boolean isCorrectFormat() {
