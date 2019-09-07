@@ -166,5 +166,3 @@ if(string.minLength(1)){
   - [x] Match
   - [x] Max size
   - [x] Min size
-- [ ] IBAN
-- [ ] Credit Card
